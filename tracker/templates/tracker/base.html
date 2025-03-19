@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'tracker:job_list' %}">Home</a>
+        <a href="{% url 'tracker:add_job' %}">Add Job</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

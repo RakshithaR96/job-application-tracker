@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import JobApplication  # Import the model
 
-# Register your models here.
+# Register the JobApplication model so it appears in the admin panel
+admin.site.register(JobApplication)
