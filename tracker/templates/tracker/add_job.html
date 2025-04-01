@@ -3,7 +3,7 @@
 {% block content %}
 <div class="container">
     <h2>Add a New Job</h2>
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">  <!-- Required for file uploads -->
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Add Job</button>
